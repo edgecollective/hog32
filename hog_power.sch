@@ -1,0 +1,274 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L D D1
+U 1 1 5BA959C3
+P 2500 1650
+F 0 "D1" H 2500 1750 50  0000 C CNN
+F 1 "D" H 2500 1550 50  0000 C CNN
+F 2 "" H 2500 1650 50  0001 C CNN
+F 3 "" H 2500 1650 50  0001 C CNN
+	1    2500 1650
+	-1   0    0    1   
+$EndComp
+Text GLabel 2000 1650 0    60   Input ~ 0
+VIN
+Wire Wire Line
+	3400 1650 3400 1950
+$Comp
+L R R1
+U 1 1 5BA95A9E
+P 3400 2100
+F 0 "R1" V 3480 2100 50  0000 C CNN
+F 1 "10K" V 3400 2100 50  0000 C CNN
+F 2 "" V 3330 2100 50  0001 C CNN
+F 3 "" H 3400 2100 50  0001 C CNN
+	1    3400 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5BA95AD3
+P 3400 2600
+F 0 "R2" V 3480 2600 50  0000 C CNN
+F 1 "10K" V 3400 2600 50  0000 C CNN
+F 2 "" V 3330 2600 50  0001 C CNN
+F 3 "" H 3400 2600 50  0001 C CNN
+	1    3400 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 2250 3400 2450
+Wire Wire Line
+	3400 2350 4000 2350
+Connection ~ 3400 2350
+$Comp
+L LM358 U?
+U 1 1 5BA95B72
+P 4300 2450
+F 0 "U?" H 4300 2650 50  0000 L CNN
+F 1 "LM358" H 4300 2250 50  0000 L CNN
+F 2 "" H 4300 2450 50  0001 C CNN
+F 3 "" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5BA95BE3
+P 3850 2550
+F 0 "#PWR?" H 3850 2400 50  0001 C CNN
+F 1 "+3V3" H 3850 2690 50  0000 C CNN
+F 2 "" H 3850 2550 50  0001 C CNN
+F 3 "" H 3850 2550 50  0001 C CNN
+	1    3850 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2550 4000 2550
+$Comp
+L GND #PWR?
+U 1 1 5BA95C4F
+P 4200 2750
+F 0 "#PWR?" H 4200 2500 50  0001 C CNN
+F 1 "GND" H 4200 2600 50  0000 C CNN
+F 2 "" H 4200 2750 50  0001 C CNN
+F 3 "" H 4200 2750 50  0001 C CNN
+	1    4200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BA95D0D
+P 3400 2750
+F 0 "#PWR?" H 3400 2500 50  0001 C CNN
+F 1 "GND" H 3400 2600 50  0000 C CNN
+F 2 "" H 3400 2750 50  0001 C CNN
+F 3 "" H 3400 2750 50  0001 C CNN
+	1    3400 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5BA95D22
+P 4200 2150
+F 0 "#PWR?" H 4200 2000 50  0001 C CNN
+F 1 "+3V3" H 4200 2290 50  0000 C CNN
+F 2 "" H 4200 2150 50  0001 C CNN
+F 3 "" H 4200 2150 50  0001 C CNN
+	1    4200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Q_PMOS_DGS Q1
+U 1 1 5BA95D3E
+P 5000 2450
+F 0 "Q1" H 5200 2500 50  0000 L CNN
+F 1 "Q_PMOS_DGS" H 5200 2400 50  0000 L CNN
+F 2 "" H 5200 2550 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2450 4800 2450
+Wire Wire Line
+	5100 2250 5100 1650
+Text GLabel 4350 1650 0    60   Input ~ 0
+VBUS
+Wire Wire Line
+	5100 3000 6000 3000
+$Comp
+L LF33_TO220 U?
+U 1 1 5BA95F52
+P 6300 3000
+F 0 "U?" H 6150 3125 50  0000 C CNN
+F 1 "LF33_TO220" H 6300 3125 50  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220_Vertical" H 6300 3225 50  0001 C CIN
+F 3 "" H 6300 2950 50  0001 C CNN
+	1    6300 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5BA95FE6
+P 6300 3300
+F 0 "#PWR?" H 6300 3050 50  0001 C CNN
+F 1 "GND" H 6300 3150 50  0000 C CNN
+F 2 "" H 6300 3300 50  0001 C CNN
+F 3 "" H 6300 3300 50  0001 C CNN
+	1    6300 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 3000 6950 3000
+$Comp
+L +3V3 #PWR?
+U 1 1 5BA9601F
+P 6950 3000
+F 0 "#PWR?" H 6950 2850 50  0001 C CNN
+F 1 "+3V3" H 6950 3140 50  0000 C CNN
+F 2 "" H 6950 3000 50  0001 C CNN
+F 3 "" H 6950 3000 50  0001 C CNN
+	1    6950 3000
+	1    0    0    -1  
+$EndComp
+Text Notes 6100 2750 0    60   ~ 0
+3.3V LDO\n(Drop: 0.5V)
+Text Notes 3950 1500 0    60   ~ 0
+USB Input
+Text Notes 2150 1500 0    60   ~ 0
+Battery Input\n(>=6.6V)
+Connection ~ 5100 3000
+$Comp
+L +5V #PWR?
+U 1 1 5BA96120
+P 5400 3600
+F 0 "#PWR?" H 5400 3450 50  0001 C CNN
+F 1 "+5V" H 5400 3740 50  0000 C CNN
+F 2 "" H 5400 3600 50  0001 C CNN
+F 3 "" H 5400 3600 50  0001 C CNN
+	1    5400 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP1703A-5002_SOT23 U?
+U 1 1 5BA961E7
+P 3950 3600
+F 0 "U?" H 3800 3725 50  0000 C CNN
+F 1 "MCP1703A-5002_SOT23" H 3950 3725 50  0000 L CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 3950 3800 50  0001 C CNN
+F 3 "" H 3950 3550 50  0001 C CNN
+	1    3950 3600
+	1    0    0    -1  
+$EndComp
+Text Notes 3550 3400 0    60   ~ 0
+5V Switching Regulator\n(VIN:  6.5V .. 36V)
+$Comp
+L D D2
+U 1 1 5BA96569
+P 4700 1650
+F 0 "D2" H 4700 1750 50  0000 C CNN
+F 1 "D" H 4700 1550 50  0000 C CNN
+F 2 "" H 4700 1650 50  0001 C CNN
+F 3 "" H 4700 1650 50  0001 C CNN
+	1    4700 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5100 1650 4850 1650
+Wire Wire Line
+	4550 1650 4350 1650
+Wire Wire Line
+	2350 1650 2000 1650
+Wire Wire Line
+	2650 1650 3400 1650
+Connection ~ 2900 1650
+Wire Wire Line
+	2900 1650 2900 3600
+Wire Wire Line
+	2900 3600 3650 3600
+Wire Wire Line
+	4250 3600 5400 3600
+Wire Wire Line
+	5100 2650 5100 3600
+Connection ~ 5100 3600
+$Comp
+L GND #PWR?
+U 1 1 5BA96AC3
+P 3950 3900
+F 0 "#PWR?" H 3950 3650 50  0001 C CNN
+F 1 "GND" H 3950 3750 50  0000 C CNN
+F 2 "" H 3950 3900 50  0001 C CNN
+F 3 "" H 3950 3900 50  0001 C CNN
+	1    3950 3900
+	1    0    0    -1  
+$EndComp
+Text Notes 1700 4600 0    60   ~ 0
+D1,D2: Schottky diodes w/ voltage drop = 0.2 Volts
+$EndSCHEMATC
