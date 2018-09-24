@@ -269,4 +269,6 @@ F 3 "" H 3950 3900 50  0001 C CNN
 	1    3950 3900
 	1    0    0    -1  
 $EndComp
+Text Notes 1700 4600 0    60   ~ 0
+D1,D2: Schottky diodes w/ voltage drop = 0.2 Volts
 $EndSCHEMATC
