@@ -1042,17 +1042,6 @@ F 3 "" H 3600 4950 50  0001 C CNN
 $EndComp
 NoConn ~ 4750 2000
 NoConn ~ 4750 2100
-$Comp
-L Conn_01x01 J8
-U 1 1 5BAB5619
-P 6900 2950
-F 0 "J8" H 6900 3050 50  0000 C CNN
-F 1 "Conn_01x01" H 6900 2850 50  0000 C CNN
-F 2 "SMD_Packages:1Pin" H 6900 2950 50  0001 C CNN
-F 3 "" H 6900 2950 50  0001 C CNN
-	1    6900 2950
-	1    0    0    -1  
-$EndComp
 NoConn ~ 6600 2150
 $Comp
 L Conn_01x07 J10
@@ -1142,8 +1131,6 @@ Wire Wire Line
 	1150 2500 2000 2500
 Connection ~ 1350 1900
 Connection ~ 1350 2500
-Wire Wire Line
-	6600 2950 6700 2950
 Wire Wire Line
 	6700 2950 6700 3150
 Wire Wire Line
@@ -1292,4 +1279,7 @@ NoConn ~ 5850 3450
 NoConn ~ 5950 3450
 NoConn ~ 5850 4650
 NoConn ~ 3350 2800
+Connection ~ 6700 2950
+Wire Wire Line
+	6600 2950 6700 2950
 $EndSCHEMATC
