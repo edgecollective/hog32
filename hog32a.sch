@@ -137,7 +137,7 @@ $EndComp
 Text GLabel 6600 2250 2    60   Input ~ 0
 19
 Text GLabel 6600 2350 2    60   Input ~ 0
-18:dht22
+18:DHT22
 Text GLabel 6600 2450 2    60   Input ~ 0
 5:onewire
 Text GLabel 6600 2550 2    60   Input ~ 0
@@ -945,7 +945,7 @@ Text GLabel 5200 6750 0    60   Input ~ 0
 Text GLabel 5200 6650 0    60   Input ~ 0
 15
 Text GLabel 5250 4750 0    60   Input ~ 0
-18:dht22
+18:DHT22
 $Comp
 L GND #PWR035
 U 1 1 5B891B40
@@ -1283,4 +1283,13 @@ Connection ~ 2250 1550
 Connection ~ 2250 1900
 Text Notes 1100 4250 0    60   ~ 0
 Manual Reset
+NoConn ~ 10250 1450
+NoConn ~ 5450 3450
+NoConn ~ 5550 3450
+NoConn ~ 5650 3450
+NoConn ~ 5750 3450
+NoConn ~ 5850 3450
+NoConn ~ 5950 3450
+NoConn ~ 5850 4650
+NoConn ~ 3350 2800
 $EndSCHEMATC
